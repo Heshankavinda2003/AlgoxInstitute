@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 using AlgoxInstitute.Models;
 
 namespace Algox.Data
@@ -7,9 +8,9 @@ namespace Algox.Data
 	{
 		public static async Task SeedRolesAndAdminAsync(IServiceProvider service)
 		{
-			// Identity Managers
-			var userManager = service.GetService<UserManager<IdentityUser>>();
-			var roleManager = service.GetService<RoleManager<IdentityRole>>();
+			// Identity Managers (required)
+			var userManager = service.GetRequiredService<UserManager<IdentityUser>>();
+			var roleManager = service.GetRequiredService<RoleManager<IdentityRole>>();
 
 			// 1. Create Roles if they don't exist
 			string[] roleNames = { "Admin", "Teacher", "Student" };

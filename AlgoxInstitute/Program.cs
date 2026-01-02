@@ -1,3 +1,4 @@
+using Algox.Data;
 using AlgoxInstitute.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -15,6 +16,14 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+// --- ADD THIS BLOCK TO RUN SEEDER ---
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await DbSeeder.SeedRolesAndAdminAsync(services);
+}
+// ------------------------------------
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

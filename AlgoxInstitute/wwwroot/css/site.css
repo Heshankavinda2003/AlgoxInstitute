@@ -18,7 +18,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -82,8 +84,7 @@ body {
     color: #0d6efd;
 }
 /* Common button style */
-.btn-login,
-.btn-register {
+.btn-login {
     padding: 6px 18px;
     border-radius: 5px;
     font-weight: 600;
@@ -101,18 +102,6 @@ body {
 
     .btn-login:hover {
         background-color: #0d6efd;
-        color: #ffffff;
-    }
-
-/* Register button  */
-.btn-register {
-    background-color: #ffe5e5;
-    color: #dc3545;
-    border: 1px solid #f5c2c7;
-}
-
-    .btn-register:hover {
-        background-color: #dc3545;
         color: #ffffff;
     }
 
@@ -183,4 +172,146 @@ body {
 .service-card-2:hover {
     transform: translateY(-6px);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+
+
+/* footer */
+
+.lms-footer {
+    background-color: #1f2933;
+    color: #ffffff;
+    padding: 40px 0 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+    .footer-section h3,
+    .footer-section h4 {
+        color: #38bdf8;
+        margin-bottom: 10px;
+    }
+
+    .footer-section p {
+        font-size: 14px;
+    }
+
+    .footer-section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+
+            .footer-section ul li a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+                .footer-section ul li a:hover {
+                    text-decoration: underline;
+                }
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #374151;
+    margin-top: 20px;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+.social-icons {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 10px;
+    margin-top: 10px;
+}
+
+    .social-icons img {
+        width: 28px;
+        height: 28px;
+        transition: transform 0.3s;
+    }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+
+/* About Section */
+#about {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* light gray background */
+    color: #333333;
+}
+
+/* About Title */
+.about-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* About Text */
+.about-text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* About Image */
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Learn More Button */
+.btn-about {
+    padding: 10px 25px;
+    background-color: #5f1782; /* deep purple */
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+    .btn-about:hover {
+        background-color: #7b33a2;
+        box-shadow: 0 8px 20px rgba(95,23,130,0.35);
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    #about {
+        padding: 60px 15px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-text {
+        font-size: 15px;
+    }
 }

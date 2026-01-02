@@ -122,6 +122,11 @@ body {
     color: aliceblue;
     padding-top: 5%;
 }
+    #banner .container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
 
 .promo-title {
     font-size: 40px;
@@ -184,3 +189,137 @@ body {
     transform: translateY(-6px);
     box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
 }
+/* About Section */
+#about {
+    padding: 80px 0;
+    background-color: #f8f9fa; /* light gray background */
+    color: #333333;
+}
+
+/* About Title */
+.about-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+/* About Text */
+.about-text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* About Image */
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* Learn More Button */
+.btn-about {
+    padding: 10px 25px;
+    background-color: #5f1782; /* deep purple */
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+    .btn-about:hover {
+        background-color: #7b33a2;
+        box-shadow: 0 8px 20px rgba(95,23,130,0.35);
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    #about {
+        padding: 60px 15px;
+    }
+
+    .about-title {
+        font-size: 28px;
+    }
+
+    .about-text {
+        font-size: 15px;
+    }
+}
+/* Navbar Buttons */
+.btn-login {
+    background-color: #0d6efd;
+    color: #fff;
+    border-radius: 8px;
+    padding: 6px 18px;
+    border: none;
+}
+
+    .btn-login:hover {
+        background-color: #0b5ed7;
+    }
+
+/* Courses Section */
+#courses {
+    background-color: #f4f7ff;
+}
+
+    #courses h1 {
+        font-size: 36px;
+    }
+
+    #courses p {
+        font-size: 16px;
+        color: #555;
+    }
+
+    /* Category Buttons */
+    #courses .btn {
+        border-radius: 20px;
+        padding: 6px 18px;
+    }
+
+        #courses .btn.active {
+            background-color: #0d6efd;
+            color: #fff;
+        }
+
+/* Course Card */
+.course-card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .course-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+    }
+
+/* Enroll Button */
+.btn-enroll {
+    background-color: #dc3545;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+    .btn-enroll:hover {
+        background-color: #c82333;
+        box-shadow: 0 8px 20px rgba(220,53,69,0.3);
+    }
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    #courses h1 {
+        font-size: 28px;
+    }
+}
+

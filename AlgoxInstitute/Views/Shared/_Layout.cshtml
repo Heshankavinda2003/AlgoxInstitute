@@ -28,33 +28,35 @@
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="about us" asp-action="Index">abous us</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-dark"
-                           href="#"
-                           id="navbarDropdown"
-                           role="button"
-                           data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Courses
-                        </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark fw-semibold"
+                               href="#"
+                               id="navbarDropdown"
+                               role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                Courses
+                            </a>
 
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item"
-                                   asp-controller="courses"
-                                   asp-action="Index">
-                                    All Courses
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item"
-                                   asp-controller="courses"
-                                   asp-action="MyCourses">
-                                    My Courses
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
+                            <ul class="dropdown-menu dropdown-menu-end"
+                                aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item"
+                                       asp-controller="Courses"
+                                       asp-action="Index">
+                                        All Courses
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item"
+                                       asp-controller="Courses"
+                                       asp-action="MyCourses">
+                                        My Courses
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
 
                     <li class="nav-item">
                         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">contact</a>

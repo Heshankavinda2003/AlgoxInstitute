@@ -35,6 +35,10 @@ We designed a modern, accessible interface before writing code. You can explore 
 
 <img width="1920" height="1080" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/77c6ae96-5a62-44a7-959b-9b8896ddd0c7" />
 
+<img width="1920" height="1080" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/a5600f55-b784-4393-8650-4ee2ff45cad4" />
+
+<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/c87c9fcc-8bca-489c-9acb-40c7ee7bf40a" />
+
 
 ## ⚙️ Installation & Setup
 Follow these steps to run the project locally:

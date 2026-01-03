@@ -3,6 +3,8 @@
 > **Bridging the Digital Divide with Accessible Education**
 > *A Hackathon Project for SDG 4 (Quality Education) & SDG 10 (Reduced Inequalities)*
 
+<img width="1843" height="368" alt="Screenshot 2026-01-03 073814" src="https://github.com/user-attachments/assets/f0339a0a-5e63-424e-ba79-e630ea835045" />
+
 ![Project Banner](<img width="1843" height="368" alt="Screenshot 2026-01-03 073814" src="https://github.com/user-attachments/assets/6d58a982-d90a-41b9-bd95-241b5ecd4731" />)
 
 ## 🚀 Project Overview

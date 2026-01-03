@@ -1,0 +1,53 @@
+﻿@model AlgoxInstitute.Models.Course
+
+@{
+    ViewData["Title"] = "Create New Course";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0">Create New Course</h3>
+                </div>
+                <div class="card-body">
+                    <form asp-action="Create" enctype="multipart/form-data">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                        <div class="mb-3">
+                            <label asp-for="Title" class="form-label fw-bold">Course Title</label>
+                            <input asp-for="Title" class="form-control" placeholder="e.g. Advanced Mathematics" />
+                            <span asp-validation-for="Title" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label asp-for="Description" class="form-label fw-bold">Description</label>
+                            <textarea asp-for="Description" class="form-control" rows="4" placeholder="Briefly describe what students will learn..."></textarea>
+                            <span asp-validation-for="Description" class="text-danger"></span>
+                        </div>
+
+                        <div class="mb-4 p-3 bg-light border rounded">
+                            <label class="form-label fw-bold">Upload Offline Resource (PDF)</label>
+                            <input type="file" name="resourceFile" class="form-control" accept=".pdf" />
+                            <div class="form-text text-muted">
+                                Uploading a PDF helps students with limited internet access download and study offline.
+                            </div>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">Publish Course</button>
+                            <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

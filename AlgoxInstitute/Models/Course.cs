@@ -8,8 +8,8 @@ namespace AlgoxInstitute.Models
 		public int Id { get; set; }
 		[Required] public string Title { get; set; }
 		public string Description { get; set; }
-		public string TeacherEmail { get; set; } // Links to the teacher who created it
-		public string? PdfUrl { get; set; } // For offline learning
+		public string TeacherEmail { get; set; } 
+		public string? PdfUrl { get; set; } // 
 
 		public virtual ICollection<Enrollment> Enrollments { get; set; }
 	}

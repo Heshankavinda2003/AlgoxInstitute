@@ -12,7 +12,7 @@ namespace Algox.Data
 			var userManager = service.GetRequiredService<UserManager<IdentityUser>>();
 			var roleManager = service.GetRequiredService<RoleManager<IdentityRole>>();
 
-			// 1. Create Roles if they don't exist
+			// Create Roles if they don't exist
 			string[] roleNames = { "Admin", "Teacher", "Student" };
 			foreach (var roleName in roleNames)
 			{
@@ -22,7 +22,7 @@ namespace Algox.Data
 				}
 			}
 
-			// 2. Create the Super Admin User
+			// Create the Super Admin User
 			var adminEmail = "admin@institute.com";
 			var adminUser = await userManager.FindByEmailAsync(adminEmail);
 
@@ -35,7 +35,7 @@ namespace Algox.Data
 					EmailConfirmed = true
 				};
 
-				// Password must be strong (Uppercase, symbol, number)
+				// Password must be strong
 				var result = await userManager.CreateAsync(newAdmin, "Admin@123");
 
 				if (result.Succeeded)

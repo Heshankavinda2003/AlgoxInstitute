@@ -4,7 +4,7 @@
 	{
 		public int Id { get; set; }
 		public int CourseId { get; set; }
-		public string StudentEmail { get; set; } // Links to student
+		public string StudentEmail { get; set; } 
 		public int Progress { get; set; } = 0;
 
 		public virtual Course Course { get; set; }

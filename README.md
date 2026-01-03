@@ -3,7 +3,7 @@
 > **Bridging the Digital Divide with Accessible Education**
 > *A Hackathon Project for SDG 4 (Quality Education) & SDG 10 (Reduced Inequalities)*
 
-![Project Banner](https://via.placeholder.com/1200x400?text=AlgoxInstitute+Project+Banner)
+![Project Banner](<img width="1843" height="368" alt="Screenshot 2026-01-03 073814" src="https://github.com/user-attachments/assets/6d58a982-d90a-41b9-bd95-241b5ecd4731" />)
 
 ## 🚀 Project Overview
 **AlgoxInstitute** is a lightweight, offline-first Learning Management System (LMS) designed for educational institutions with limited internet infrastructure. It allows students to track their progress and download course materials (PDFs) for offline study, ensuring that education is accessible to everyone, everywhere.

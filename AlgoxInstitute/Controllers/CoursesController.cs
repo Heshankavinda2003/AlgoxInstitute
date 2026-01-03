@@ -7,7 +7,7 @@ using AlgoxInstitute.Models;
 
 namespace AlgoxInstitute.Controllers
 {
-	[Authorize] // Must be logged in
+	[Authorize] //must login
 	public class CoursesController : Controller
 	{
 		private readonly ApplicationDbContext _context;
@@ -19,20 +19,20 @@ namespace AlgoxInstitute.Controllers
 			_userManager = userManager;
 		}
 
-		// GET: Courses
+		//get corses
 		public async Task<IActionResult> Index()
 		{
 			return View(await _context.Courses.ToListAsync());
 		}
 
-		// GET: Courses/Create (TEACHER ONLY)
+		//get courses
 		[Authorize(Roles = "Teacher,Admin")]
 		public IActionResult Create()
 		{
 			return View();
 		}
 
-		// POST: Courses/Create
+		//post courses
 		[HttpPost]
 		[Authorize(Roles = "Teacher,Admin")]
 		[ValidateAntiForgeryToken]

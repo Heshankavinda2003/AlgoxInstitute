@@ -137,6 +137,21 @@ promo-mission {
     margin-right: 0;
     float: right;
 }
+.btn-tutorial {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #e56717; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 5px;
+    font-weight: bold; 
+    transition: background 0.3s;
+}
+
+    .btn-tutorial:hover {
+        background-color: darkorange; 
+    }
+
 
 /* services card 1 */
 #services {
@@ -274,7 +289,7 @@ promo-mission {
 /* About Section */
 #about {
     padding: 80px 0;
-    background-color: #f8f9fa; /* light gray background */
+    background-color: #f8f9fa; 
     color: #333333;
 }
 
@@ -303,7 +318,7 @@ promo-mission {
 /* Learn More Button */
 .btn-about {
     padding: 10px 25px;
-    background-color: #5f1782; /* deep purple */
+    background-color: #5f1782;
     color: #ffffff;
     font-weight: 600;
     font-size: 14px;
@@ -318,7 +333,6 @@ promo-mission {
         box-shadow: 0 8px 20px rgba(95,23,130,0.35);
     }
 
-/* Responsive Adjustments */
 @media (max-width: 767px) {
     #about {
         padding: 60px 15px;
@@ -387,15 +401,14 @@ promo-mission {
         box-shadow: 0 8px 20px rgba(220,53,69,0.3);
     }
 
-/* Responsive adjustments */
 @media (max-width: 767px) {
     #courses h1 {
         font-size: 28px;
     }
 }
-/* Contact Page Specific Styles */
+
 #contact-page {
-    background-color: #f4f7ff; /* Matching your Courses section background */
+    background-color: #f4f7ff;
 }
 
 .contact-card {
@@ -407,11 +420,11 @@ promo-mission {
 
 .card-white {
     background-color: #ffffff;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08); /* Matching your course-card shadow */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card-blue-tint {
-    background-color: #d8e6f3; /* Light blue tint from your image */
+    background-color: #d8e6f3;
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
@@ -431,7 +444,7 @@ promo-mission {
     font-weight: 500;
 }
 
-/* Ensure inputs match your focus style */
+
 .contact-card .form-control {
     border: 1px solid #dee2e6;
     padding: 10px;
@@ -441,3 +454,24 @@ promo-mission {
         border-color: #258cfb;
         box-shadow: 0 0 0 0.2rem rgba(37, 140, 251, 0.25);
     }
+/* Banner animations */
+#banner .promo-title,
+#banner .promo-mission,
+#banner p:not(.promo-title):not(.promo-mission),
+#banner .btn-tutorial {
+    opacity: 0;
+    transform: translateX(-50px); 
+    transition: all 0.8s ease-out;
+}
+
+#banner .banner-img {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s ease-out;
+}
+
+
+.visible {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}

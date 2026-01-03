@@ -7,7 +7,7 @@ using AlgoxInstitute.Models;
 
 namespace AlgoxInstitute.Controllers
 {
-	[Authorize(Roles = "Student")] // Strictly for Students
+	[Authorize(Roles = "Student")] //for Students
 	public class DashboardController : Controller
 	{
 		private readonly ApplicationDbContext _context;
@@ -19,16 +19,15 @@ namespace AlgoxInstitute.Controllers
 			_userManager = userManager;
 		}
 
-		// GET: Dashboard (My Courses)
+		// get Dashboard My Courses
 		public async Task<IActionResult> Index()
 		{
 			var user = await _userManager.GetUserAsync(User);
 
 			var myEnrollments = await _context.Enrollments
-				.Include(e => e.Course) // Load course details too
+				.Include(e => e.Course) // Load course 
 				.Where(e => e.StudentEmail == user.Email)
 				.ToListAsync();
-
 			return View(myEnrollments);
 		}
 

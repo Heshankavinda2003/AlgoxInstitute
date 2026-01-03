@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AlgoxInstitute.Controllers
 {
-    [Authorize(Roles = "Admin")] // ONLY ADMIN CAN ACCESS THIS
+    [Authorize(Roles = "Admin")] //admin access
     public class AdminController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
@@ -14,19 +14,19 @@ namespace AlgoxInstitute.Controllers
             _userManager = userManager;
         }
 
-        // GET: Admin/Index (Dashboard)
+        
         public IActionResult Index()
         {
             return View();
         }
 
-        // GET: Admin/CreateUser
+        
         public IActionResult CreateUser()
         {
             return View();
         }
 
-        // POST: Admin/CreateUser
+        
         [HttpPost]
         public async Task<IActionResult> CreateUser(string email, string password, string role)
         {

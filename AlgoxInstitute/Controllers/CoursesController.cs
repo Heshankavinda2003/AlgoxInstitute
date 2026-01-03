@@ -19,20 +19,20 @@ namespace AlgoxInstitute.Controllers
 			_userManager = userManager;
 		}
 
-		// GET: Courses
+		// get Courses
 		public async Task<IActionResult> Index()
 		{
 			return View(await _context.Courses.ToListAsync());
 		}
 
-		// GET: Courses/Create (TEACHER ONLY)
+		//get Courses
 		[Authorize(Roles = "Teacher,Admin")]
 		public IActionResult Create()
 		{
 			return View();
 		}
 
-		// POST: Courses/Create
+		//post Courses
 		[HttpPost]
 		[Authorize(Roles = "Teacher,Admin")]
 		[ValidateAntiForgeryToken]
@@ -66,7 +66,7 @@ namespace AlgoxInstitute.Controllers
 			return View(course);
 		}
 
-		// POST: Courses/Enroll (STUDENT ONLY)
+		// post courses
 		[HttpPost]
 		[Authorize(Roles = "Student")]
 		[ValidateAntiForgeryToken]

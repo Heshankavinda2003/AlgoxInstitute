@@ -35,16 +35,8 @@ We designed a modern, accessible interface before writing code. You can explore 
 ## 📸 Screenshots
 <img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/ca0b822e-700d-4abe-9441-9e235e4bff98" />
 
-| **Home Page** | **Student Dashboard** |
-|:---:|:---:|
-| ![Home](https://via.placeholder.com/400x250?text=Upload+Screenshot+1) | ![Dashboard](https://via.placeholder.com/400x250?text=Upload+Screenshot+2) |
-
-
 <img width="1920" height="1080" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/77c6ae96-5a62-44a7-959b-9b8896ddd0c7" />
 
-| **Course Catalog** | **Course Creation** |
-|:---:|:---:|
-| ![Courses](https://via.placeholder.com/400x250?text=Upload+Screenshot+3) | ![Create](https://via.placeholder.com/400x250?text=Upload+Screenshot+4) |
 
 ## ⚙️ Installation & Setup
 Follow these steps to run the project locally:
